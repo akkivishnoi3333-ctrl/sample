@@ -16,7 +16,7 @@ app.set('view engine', 'jade');
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://sample-3-pf1p.onrender.com"
+  "https://sample-4-pf1p.onrender.com"
 ];
 
 app.use(cors({
