@@ -1,22 +1,8 @@
-// import axios from "axios";
-
-// const API = axios.create({
-//   baseURL: "http://localhost:5000/api", // backend base URL
-// });
-
-
-// API.interceptors.request.use((req) => {
-//   const token = localStorage.getItem("token");
-//   if (token) req.headers.Authorization = `Bearer ${token}`;
-//   return req;
-// });
-
-// export default API;
-// utils/api.js
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL:"https://sample-3-pf1p.onrender.com/api;
+",
 });
 
 API.interceptors.request.use((config) => {
