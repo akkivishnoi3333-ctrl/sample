@@ -20,6 +20,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use("/upload", express.static(path.join(__dirname, "upload")));
+app.use(express.static(path.join(__dirname, "../hotel-management-frontend/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../hotel-management-frontend/build", "index.html"));
+});
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
